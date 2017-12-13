@@ -1,0 +1,25 @@
+{
+  "name": "cordova-share-js",
+  "version": "1.0.0",
+  "description": "基于Cordova插件，提供社交平台分享功能的统一方法",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangxubo23/cordova-share-js.git"
+  },
+  "keywords": [
+    "Cordova",
+    "Share",
+    "Wechat",
+    "QQ"
+  ],
+  "author": "Harry Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huangxubo23/cordova-share-js/issues"
+  },
+  "homepage": "https://github.com/huangxubo23/cordova-share-js#readme"
+}
