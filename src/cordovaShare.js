@@ -10,8 +10,8 @@ class CordovaShare {
 			success: (success) => {
 				console.log(success || 'Share successful');
 			},
-			error: (err) => {
-				console.error('Share failed', err)
+			error: (error) => {
+				console.error('Share failed', error);
 			}
 		}
 	}
@@ -120,9 +120,7 @@ class CordovaShare {
 				}, {
 					client: QQSDK.ClientType.QQ,
 					scene: target === 'friend' ? QQSDK.Scene.QQ : QQSDK.Scene.QQZone,
-					title: shareData.title,
-					description: shareData.description,
-					image: shareData.image,
+					text: shareData.title,
 				});
 				break;
 			}
@@ -178,9 +176,9 @@ class CordovaShare {
 				WeiboSDK.shareTextToWeibo(() => {
 					shareData.success(this.shareSuccessText('Weibo', type));
 				}, (failReason) => {
-						shareData.error(failReason);
+					shareData.error(failReason);
 				}, {
-					text: shareData.description,
+					text: shareData.title,
 				});
 				break;
 			}
