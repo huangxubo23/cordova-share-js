@@ -7,13 +7,10 @@
 * 微博，支持图片、文字和页面的分享。
 
 ## 使用介绍
-将`CordovaShare`引入到到所需的项目下：
-```
-npm install --save CordovaShare
-```
+将`cordovaShare.js`引入到到所需的项目下：
 在所需的JS文件中引入方法：
 ```
-import CordovaShare from 'CordovaShare';
+import CordovaShare from './cordovaShare.js';
 ```
 
 然后，根据项目需要支持的分享平台，选择安装对应的插件，并且根据分享的类型将数据传给`CordovaShare`对应的方法。
