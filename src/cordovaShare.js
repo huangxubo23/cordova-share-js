@@ -144,6 +144,7 @@ class CordovaShare {
             scene: target === 'friend'
               ? QQSDK.Scene.QQ
               : QQSDK.Scene.QQZone,
+            url: shareData.url,
             title: shareData.title,
             description: shareData.description,
             image: shareData.image
