@@ -97,9 +97,9 @@ CordovaShare.qq(data, target, type);
 ```
 const data = {
   title: '标题',
-	description: '描述',
+	description: '描述',   // qq必填
 	url: 'url': // 页面的url地址
-	image: 'base64',  // 支持base64、url图片和图片的绝对路径
+	image: 'url',  // qq必填，只支持url图片
 	success: (success) => {
 		console.log(success);
 	},
