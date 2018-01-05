@@ -178,7 +178,7 @@ class CordovaShare {
     switch (type) {
       case 'image':
         {
-          WeiboSDK.shareToWeibo(() => {
+          WeiboSDK.shareImageToWeibo(() => {
             shareData.success();
           }, (failReason) => {
             shareData.error(failReason);
