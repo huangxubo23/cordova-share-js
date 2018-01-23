@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { ShareButtons } from './ShareButtons';
 
 const styles = {
@@ -61,13 +61,13 @@ class ShareOverlay extends Component {
   }
 }
 
-ShareOverlay.PropTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  quality: PropTypes.number,
-  shareTypes: PropTypes.array,
-  onClose: PropTypes.func,
-  onError: PropTypes.func,
-};
+// ShareOverlay.PropTypes = {
+//   title: PropTypes.string,
+//   description: PropTypes.string,
+//   quality: PropTypes.number,
+//   shareTypes: PropTypes.array,
+//   onClose: PropTypes.func,
+//   onError: PropTypes.func,
+// };
 
 export default ShareOverlay;

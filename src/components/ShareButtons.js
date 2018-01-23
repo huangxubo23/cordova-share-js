@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import CordovaShare from '../cordovaShare';
 
 const wechatIcon = require('./images/wechat.png');
@@ -190,14 +190,14 @@ class ShareButtons extends Component {
   }
 }
 
-ShareButtons.PropTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  shareTypes: PropTypes.array,
-  quality: PropTypes.number,
-  image: PropTypes.any,
-  onClose: PropTypes.func,
-  onError: PropTypes.func,
-};
+// ShareButtons.PropTypes = {
+//   title: PropTypes.string,
+//   description: PropTypes.string,
+//   shareTypes: PropTypes.array,
+//   quality: PropTypes.number,
+//   image: PropTypes.any,
+//   onClose: PropTypes.func,
+//   onError: PropTypes.func,
+// };
 
 export default ShareButtons;

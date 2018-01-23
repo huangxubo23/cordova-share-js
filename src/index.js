@@ -1,13 +1,17 @@
+require("babel-core/register");
+require("babel-polyfill");
+
 /**
  * 分享方法
  */
-// import CordovaShare from './cordovaShare';
+import CordovaShare from './cordovaShare';
 
-// export default CordovaShare;
-export {default} from './cordovaShare';
+export default CordovaShare;
 
 /**
  * 分享组件
  */
-export {default as CordovaScreenshot} from './components/CordovaScreenshot';
-export {default as ShareButtons} from './components/ShareButtons';
+import CordovaScreenshot from './components/CordovaScreenshot';
+import ShareButtons from './components/ShareButtons';
+
+export { CordovaScreenshot, ShareButtons };
