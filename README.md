@@ -241,6 +241,7 @@ import { ShareButtons } from './components/cordova-share-js';
 	onError={onError}
 />
 ```
+<img src="https://github.com/huangxubo23/cordova-share-js/blob/master/screenshot/ShareButtons.png" alt="ShareButtons" title="ShareButtons" width="250" height="500" />
 
 ### 分享弹框组件：CordovaScreenshot
 在项目中引入CordovaScreenshot组件
@@ -259,3 +260,4 @@ import { CordovaScreenshot } from './components/cordova-share-js';
 	onError={onError}
 />
 ```
+<img src="https://github.com/huangxubo23/cordova-share-js/blob/master/screenshot/CordovaScreenshot.png" alt="CordovaScreenshot" title="CordovaScreenshot" width="550" height="250" />
