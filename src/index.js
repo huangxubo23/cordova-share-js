@@ -1,16 +1,13 @@
-import cordovaShare from './cordovaShare';
-import CordovaScreenshot from './components/CordovaScreenshot';
-import ShareButtons from './components/ShareButtons';
-
 /**
  * 分享方法
  */
-export default cordovaShare;
+// import CordovaShare from './cordovaShare';
+
+// export default CordovaShare;
+export {default} from './cordovaShare';
 
 /**
  * 分享组件
  */
-export {
-  CordovaScreenshot,
-  ShareButtons,
-};
+export {default as CordovaScreenshot} from './components/CordovaScreenshot';
+export {default as ShareButtons} from './components/ShareButtons';

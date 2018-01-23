@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import { ShareOverlay } from './';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { ShareOverlay } from './ShareOverlay';
 
 const styles = {
   share: {
@@ -73,7 +74,7 @@ CordovaScreenshot.PropTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   quality: PropTypes.number,
-  shareTypes: PropTypes.arr,
+  shareTypes: PropTypes.array,
   onClose: PropTypes.func,
   onError: PropTypes.func,
   children: PropTypes.element,

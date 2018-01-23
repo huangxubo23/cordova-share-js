@@ -1,11 +1,12 @@
 {
   "name": "cordova-share-js",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "基于Cordova插件，提供社交平台分享功能的统一方法",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": ["lib"],    
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.js"
+    "build": "parcel build index.js --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "parcel-bundler": "^1.4.1"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

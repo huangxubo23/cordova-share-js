@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import { ShareButtons } from './';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { ShareButtons } from './ShareButtons';
 
 const styles = {
   container: {
@@ -61,7 +62,12 @@ class ShareOverlay extends Component {
 }
 
 ShareOverlay.PropTypes = {
-  title: PropTypes.element || PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  quality: PropTypes.number,
+  shareTypes: PropTypes.array,
+  onClose: PropTypes.func,
+  onError: PropTypes.func,
 };
 
 export default ShareOverlay;
