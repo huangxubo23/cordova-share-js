@@ -1,4 +1,4 @@
-import cordovaShare from './src/cordovaShare';
+import cordovaShare from './cordovaShare';
 import CordovaScreenshot from './components/CordovaScreenshot';
 import ShareButtons from './components/ShareButtons';
 

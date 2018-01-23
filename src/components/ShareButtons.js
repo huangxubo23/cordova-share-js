@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import CordovaShare from '../src/cordovaShare';
+import CordovaShare from '../cordovaShare';
 
 const wechatIcon = require('./images/wechat.png');
 const wechatArticleIcon = require('./images/wechat_article.png');
