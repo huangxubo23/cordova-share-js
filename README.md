@@ -7,7 +7,7 @@
 * 微博，支持图片、文字和页面的分享。
 
 ## 使用介绍
-使用私有仓库安装
+使用私有仓库或npm安装
 ```
 npm install cordova-share-js
 ```
@@ -227,7 +227,7 @@ onError | 分享过程中发生错误的回调函数
 ### 分享按钮组件：ShareButtons
 在项目中引入ShareButtons组件
 ```
-import { ShareButtons } from './components/cordova-share-js';
+import { ShareButtons } from 'cordova-share-js';
 ```
 
 示例：
@@ -246,7 +246,7 @@ import { ShareButtons } from './components/cordova-share-js';
 ### 分享弹框组件：CordovaScreenshot
 在项目中引入CordovaScreenshot组件
 ```
-import { CordovaScreenshot } from './components/cordova-share-js';
+import { CordovaScreenshot } from 'cordova-share-js';
 ```
 
 示例：
