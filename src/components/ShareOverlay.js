@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
-import { ShareButtons } from './ShareButtons';
+import ShareButtons from './ShareButtons';
 
 const styles = {
   container: {

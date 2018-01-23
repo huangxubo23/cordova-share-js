@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
-import { ShareOverlay } from './ShareOverlay';
+import ShareOverlay from './ShareOverlay';
 
 const styles = {
   share: {
