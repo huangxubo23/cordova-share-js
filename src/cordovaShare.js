@@ -172,7 +172,7 @@ class CordovaShare {
 
     const shareData = {
       ...this.initData,
-      ...data
+      ...data,
     };
 
     switch (type) {

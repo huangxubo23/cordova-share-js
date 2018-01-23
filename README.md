@@ -20,6 +20,7 @@ import CordovaShare from 'cordova-share-js';
 然后，根据项目需要支持的分享平台，选择安装对应的插件，并且根据分享的类型将数据传给`CordovaShare`对应的方法。
 
 
+## 分享插件
 ### 微信
 #### 安装依赖
 在Cordova项目目录下，安装`cordova-plugin-wechat`，并且将`YOUR_WECHAT_APPID`替换成微信开放平台的应用ID。
@@ -192,4 +193,69 @@ const target = 'article';   // 发布微博
 const type = 'text';
 
 CordovaShare.weibo(data, target, type);
+```
+
+
+## 分享组件
+在Cordova项目目录下，安装分享组件依赖的截图插件`cordova-screenshot`。
+```
+cordova plugin add https://github.com/gitawego/cordova-screenshot.git
+```
+
+### 支持平台
+目前分享组件可以支持截图并分享到微信、qq和微博：
+平台 | shareTypes
+---- | ---
+微信好友 | wechat_friend
+微信朋友圈 |  wechat_article
+QQ好友 | qq_friend
+QQ空间 |  qq_article
+微博 |  weibo
+备注：微博无法直接分享大图片，需要先把图片上传到服务器上获取url，再做分享。
+
+### 参数说明
+参数 | 说明
+---- | ---
+title | 分享标题字符串
+description | 分享描述字符串
+quality | 分享图片质量，默认100，可选0-100数字
+shareTypes | 分享平台类型数组
+onClose | 分享关闭回调函数，包含分享成功和取消分享的情况，如：{success: false, result: "User cancel the sharing"}
+onError | 分享过程中发生错误的回调函数
+
+
+### 分享按钮组件：ShareButtons
+在项目中引入ShareButtons组件
+```
+import { ShareButtons } from './components/cordova-share-js';
+```
+
+示例：
+```
+<ShareButtons
+	title={title}
+	description={description}
+	quality={80}
+	shareTypes={['wechat_friend', 'wechat_article', 'qq_friend', 'qq_article', 'weibo']}
+	onClose={onClose}
+	onError={onError}
+/>
+```
+
+### 分享弹框组件：CordovaScreenshot
+在项目中引入CordovaScreenshot组件
+```
+import { CordovaScreenshot } from './components/cordova-share-js';
+```
+
+示例：
+```
+<CordovaScreenshot
+	title={title}
+	description={description}
+	quality={80}
+	shareTypes={['wechat_friend', 'wechat_article', 'qq_friend', 'qq_article', 'weibo']}
+	onClose={onClose}
+	onError={onError}
+/>
 ```
